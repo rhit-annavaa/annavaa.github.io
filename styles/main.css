@@ -7,7 +7,7 @@
 
     --light-color:#262626;
     --body-color:#d9d9d9a9; 
-    --heading-color:#464545;
+    --heading-color:#CAC0B3;
     --contrast-color:#bf8eb7;
 }
 
@@ -15,7 +15,7 @@ body{
     font-size: 18px;
     line-height: 1.5;
     font-family: 'Raleway';
-    background-color: #3c3440;
+    background-color: #001233;
     background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
     color: var(--body-color);
 }
@@ -58,16 +58,17 @@ body{
                          "nav nav"
                          "main main"
                          "foot foot";
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: auto 4fr;
     grid-template-rows: auto auto 1fr auto;
 }
 
 @media screen and (min-width: 25em){
     body{
         grid-template-areas: "head head"
+                             "nav nav"
                              "nav main"
                              "foot foot";
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: auto auto 1fr auto;
 
     }
 }
